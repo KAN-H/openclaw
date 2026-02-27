@@ -19,6 +19,7 @@ Availability: internal preview. The iOS app is not publicly distributed yet.
 
 ## Requirements
 
+- Device OS: **iOS 18 or newer**. (The project sets the deployment target to iOS 18; older devices such as iPhone 6s that are capped at iOS 15 cannot run the app.)
 - Gateway running on another device (macOS, Linux, or Windows via WSL2).
 - Network path:
   - Same LAN via Bonjour, **or**
