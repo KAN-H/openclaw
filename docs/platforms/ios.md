@@ -11,6 +11,12 @@ title: "iOS App"
 
 Availability: internal preview. The iOS app is not publicly distributed yet.
 
+## 中文速览（iPhone 6s 可行性）
+
+- 设备要求：**iOS 18 及以上**。项目的部署版本是 iOS 18，iPhone 6s 最多只能升级到 iOS 15，无法安装当前版本。
+- 分发方式：没有 TestFlight / App Store，需用 Xcode 本地真机安装。
+- 手动安装概要：Xcode 16+、设备已升级到 iOS 18+，运行 `pnpm install`、`./scripts/ios-configure-signing.sh`，在 `apps/ios` 目录执行 `xcodegen generate` 后用 Xcode 打开并直接 Run 到真机。
+
 ## What it does
 
 - Connects to a Gateway over WebSocket (LAN or tailnet).
@@ -19,6 +25,7 @@ Availability: internal preview. The iOS app is not publicly distributed yet.
 
 ## Requirements
 
+- Device OS: **iOS 18 or newer**. (The project sets the deployment target to iOS 18; older devices such as iPhone 6s that are capped at iOS 15 cannot run the app.)
 - Gateway running on another device (macOS, Linux, or Windows via WSL2).
 - Network path:
   - Same LAN via Bonjour, **or**

@@ -22,6 +22,7 @@ NO TEST FLIGHT AVAILABLE AT THIS POINT
 
 1. Prereqs:
    - Xcode 16+
+   - Device on iOS 18 or newer (the deployment target is 18.0; iPhone 6s/iOS 15-era devices cannot run this build)
    - `pnpm`
    - `xcodegen`
    - Apple Development signing set up in Xcode
